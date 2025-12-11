@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from '../images/PB-removebg-preview.png';
 import { Link, useLocation } from 'react-router-dom';
 import { shopInfo } from '../data/mock';
 import { useCart } from '../context/CartContext';
@@ -31,10 +32,12 @@ const Navbar = () => {
     <nav className="bg-white/95 backdrop-blur-sm border-b border-orange-100 sticky top-0 z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
+          
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
             <div className="bg-gradient-to-br from-orange-400 to-pink-400 p-2 rounded-xl group-hover:scale-105 transition-transform duration-200">
-              <IceCream className="h-6 w-6 text-white" />
+              {/* <IceCream className="h-6 w-6 text-white" /> */}
+              <img src={logo} alt="Ice Cream Shop" className='h-16 w-16 text-white' />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-800 group-hover:text-orange-500 transition-colors">
